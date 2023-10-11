@@ -16,13 +16,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- My style -->
   <link rel="stylesheet" href="../assets/css/style.css">
 
   <!-- Feather Icons -->
   <script src="https://unpkg.com/feather-icons"></script>
 
-  
+
 </head>
 
 <body>
@@ -446,7 +452,7 @@
       <div class="ms-4 mb-4">
         <hr>
       </div>
-      
+
       <!-- pemilik Billa -->
       <div class=" ms-4 mt-5 d-flex align-items-center">
         <img src="../assets/img/detail-kos/billa.png" alt="" width="75px" class="me-3">
@@ -465,9 +471,126 @@
     </div>
     <!-- review end -->
 
-
   </div>
   <!-- detail kos content end-->
+
+  <!-- rekomendasi -->
+  <section class="main-kos section-margin ms-3 kos-rekomendasi" id="main-kos">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col populer">
+          <h2 class="heading ms-2">Kamu mungkin menyukainya</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4 main-kos-populer">
+        <div class="col">
+          <div class="swiper mySwiperPopuler">
+            <div class="swiper-wrapper">
+              <!-- 1 -->
+              <div class="swiper-slide card-main-kos ms-0">
+                <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-4 px-2">
+                  <img src="../assets/img/detail-kos/saran-1.png" class="img-fluid" alt="gambar">
+                </div>
+                <div class="detail-main-kos mt-3 d-flex justify-content-between">
+                  <div class="info ms-3">
+                    <div class="rating d-flex justify-content-between align-items-center">
+                      <button class="btn btn-outline-success" type="submit">Campur</button>
+                      <i data-feather="star" class="rating-star"></i>
+                      <a href="#">5.0</a>
+                      <!-- <a href="#"><span>Sisa 1 kamar</span></a> -->
+                    </div>
+                    <p class="mt-2 mb-1 desc-kos">Kost Singgahsini Krakatau Tipe A Jakarta</p>
+                    <p class="mb-1 location">Jakarta Barat</p>
+                    <p class="fasilitas">K. Mandi Dalam •AC •Kasur</p>
+                    <div class="price-discon d-flex">
+                      <img src="../assets/img/icon-diskon.png" width="30px" height="23px" alt="diskon">
+                      <p class="ms-1 mb-1">7% <span>Rp1.425.000</span></p>
+                    </div>
+                    <p class="price"> <span>Rp1.325.250 </span>/ bulan</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="swiper-slide card-main-kos">
+                <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-4 px-2">
+                  <img src="../assets/img/detail-kos/saran-2.png" class="img-fluid" alt="gambar">
+                </div>
+                <div class="detail-main-kos mt-3 d-flex justify-content-between">
+                  <div class="info ms-3">
+                    <div class="rating d-flex justify-content-between align-items-center">
+                      <button class="btn btn-outline-success" type="submit">Putri</button>
+                      <i data-feather="star" class="rating-star"></i>
+                      <a href="#">4.6</a>
+                      <a href="#"><span>Sisa 1 kamar</span></a>
+                    </div>
+                    <p class="mt-2 mb-1 desc-kos">Kost Singgahsini Sekar Uty Galaxy Tipe C...</p>
+                    <p class="mb-1 location">Jakarta Selatan</p>
+                    <p class="fasilitas">K. Mandi Dalam •Wifi •AC •Kasur •Akses ...</p>
+                    <div class="price-discon d-flex">
+                      <img src="../assets/img/icon-diskon.png" width="30px" height="23px" alt="diskon">
+                      <p class="ms-1 mb-1">2% <span>Rp1.500.000</span></p>
+                    </div>
+                    <p class="price"> <span>Rp1.470.000 </span>/ bulan</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide card-main-kos">
+                <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-4 px-2">
+                  <img src="../assets/img/detail-kos/saran-3.png" class="img-fluid" alt="gambar">
+                </div>
+                <div class="detail-main-kos mt-3 d-flex justify-content-between">
+                  <div class="info ms-3">
+                    <div class="rating d-flex justify-content-between align-items-center">
+                      <button class="btn btn-outline-success" type="submit">Campur</button>
+                      <i data-feather="star" class="rating-star"></i>
+                      <a href="#">4.9</a>
+                      <a href="#"><span>Sisa 3 kamar</span></a>
+                    </div>
+                    <p class="mt-2 mb-1 desc-kos">Kost Singgahsini Elza 18 Tipe A Jakarta U...</p>
+                    <p class="mb-1 location">Jakarta Utara</p>
+                    <p class="fasilitas">K. Mandi Dalam Wifi •AC •Kloset duduk •K..</p>
+                    <div class="price-discon d-flex">
+                      <img src="../assets/img/icon-diskon.png" width="30px" height="23px" alt="diskon">
+                      <p class="ms-1 mb-1">7% <span>Rp1.960.000</span></p>
+                    </div>
+                    <p class="price"> <span>Rp1.822.200 </span>/ bulan</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="swiper-slide card-main-kos ms-0">
+                <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-4 px-2">
+                  <img src="../assets/img/detail-kos/saran-1.png" class="img-fluid" alt="gambar">
+                </div>
+                <div class="detail-main-kos mt-3 d-flex justify-content-between">
+                  <div class="info ms-3">
+                    <div class="rating d-flex justify-content-between align-items-center">
+                      <button class="btn btn-outline-success" type="submit">Campur</button>
+                      <i data-feather="star" class="rating-star"></i>
+                      <a href="#">5.0</a>
+                      <!-- <a href="#"><span>Sisa 1 kamar</span></a> -->
+                    </div>
+                    <p class="mt-2 mb-1 desc-kos">Kost Singgahsini Krakatau Tipe A Jakarta</p>
+                    <p class="mb-1 location">Jakarta Barat</p>
+                    <p class="fasilitas">K. Mandi Dalam •AC •Kasur</p>
+                    <div class="price-discon d-flex">
+                      <img src="../assets/img/icon-diskon.png" width="30px" height="23px" alt="diskon">
+                      <p class="ms-1 mb-1">7% <span>Rp1.425.000</span></p>
+                    </div>
+                    <p class="price"> <span>Rp1.325.250 </span>/ bulan</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- rekomendasi end-->
 
 
 
@@ -490,6 +613,21 @@
     crossorigin="anonymous"></script>
 
   <script src="../assets/js/script.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- AOS  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="../assets/js/script.js"></script>
+
+
 
   <!-- Feather Icons -->
   <script>

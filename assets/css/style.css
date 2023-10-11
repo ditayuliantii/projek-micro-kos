@@ -332,7 +332,6 @@ a {
     margin-right: 350px;
 }
 
-
 .detail-kos-foto .fixed-ajukan .dropdown-item{
     color: #969893;
 }
@@ -434,7 +433,31 @@ a {
     text-decoration: underline;
 }
 
+/* kos rekomendasi */
+/* detail */
+.kos-rekomendasi{
+    margin-right: 350px;
+}
 
+.kos-rekomendasi{
+    margin-top: 180px;
+}
+
+/* favorit */
+.rekomendasi-favorit{
+    margin: 100px 200px;
+}
+
+.pagination a, .pagination a:hover{
+    color: var(--primary);
+}
+
+
+.pagination a.active{
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+}
 
 /* CHAT */
 /* Gaya untuk komponen chat */
