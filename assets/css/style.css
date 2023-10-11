@@ -309,7 +309,74 @@ a {
 }
 
 
-/* detail kos dan sewa */
+/* detail kos foto */
+.detail-kos-foto .fixed-ajukan{
+    position: fixed;
+    right: 0;
+    margin-right: 10px;
+    width: 320px;
+    height: auto;
+    border: #c4c4c4 solid 1px;
+    border-radius: 3%;
+    padding: 20px;
+    color: #000000;
+}
+
+.detail-kos-foto .fixed-ajukan .btn{
+    border-color: #969893;
+    color: #969893;
+    border-radius: 5%;
+}
+
+.detail-kos-foto .kolom-1{
+    background: url('../img/kos-utama-1.png') no-repeat center center;
+    background-size: cover;
+    width: 900px;
+    height: 500px;
+}
+
+.detail-kos-foto .kolom-2{
+    background: url('../img/detail-kos/detail-kos1-2.png') no-repeat center center;
+    background-size: cover;
+    width: 300px;
+    height: 500px;
+    margin-right: 350px;
+}
+
+
+.detail-kos-foto .fixed-ajukan .dropdown-item{
+    color: #969893;
+}
+
+.detail-kos-foto .fixed-ajukan .dropdown-item:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.detail-kos-foto .fixed-ajukan .input-date{
+    border: 1px #969893 solid;
+    border-radius: 5%;
+
+}
+
+.detail-kos-foto .fixed-ajukan .ajukan a{
+    color: #fff;
+}
+
+.detail-kos-foto .fixed-ajukan .tanya a{
+    color: var(--primary);
+}
+
+.detail-kos-foto .fixed-ajukan .tanya {
+    color: var(--primary);
+    border: var(--primary) 1px solid;
+    border-radius: 3%;
+}
+
+.detail-kos-foto .fixed-ajukan .ajukan{
+    background-color: var(--primary);
+}
+
 .detail-kos-foto .lihat-semua{
     margin-top: 400px;
     margin-left: 110px;
@@ -322,39 +389,6 @@ a {
     color: #181515;
 }
 
-
-.ajukan-sewa .dropdown-item{
-    color: #969893;
-}
-
-.ajukan-sewa .dropdown-item:hover{
-    background-color: var(--primary);
-    color: #fff;
-}
-
-.ajukan-sewa .input-date{
-    border: 1px #969893 solid;
-    border-radius: 5%;
-
-}
-
-.ajukan-sewa .ajukan a{
-    color: #fff;
-}
-
-.ajukan-sewa .tanya a{
-    color: var(--primary);
-}
-
-.ajukan-sewa .tanya {
-    color: var(--primary);
-    border: var(--primary) 1px solid;
-    border-radius: 3%;
-}
-
-.ajukan-sewa .ajukan{
-    background-color: var(--primary);
-}
 
 /* detail kos content */
 .detail-kos-konten{
@@ -378,9 +412,6 @@ a {
     margin-right: 60px;
 }
 
-/* .detail-kos-konten .ketentuan li .judul{
-    font-weight: 700px;
-} */
 
 .detail-kos-konten .review .review-rating .list-1, .detail-kos-konten .review .review-rating .list-2{
     margin-right: 80px;
@@ -409,6 +440,7 @@ a {
     color: #181515;
     text-decoration: underline;
 }
+
 
 
 /* CHAT */
