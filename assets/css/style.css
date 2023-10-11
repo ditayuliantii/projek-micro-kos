@@ -5,8 +5,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  /* background: #9f9494; */
-  /* min-height: 5000px; */
+  min-height: 5000px;
 }
 
 a {
@@ -210,7 +209,6 @@ a {
     border-color: #E8E8E8;
 }
 
-
 /* kotak keseluruhan produk pada card-main-kos */
 .main-kos-populer .card-main-kos{
     width: 400px;
@@ -225,7 +223,6 @@ a {
     margin-bottom: 4%;
 }
 
-
 .semua-kos .semua-kos-img {
     width: 600px;
     overflow: hidden;
@@ -235,8 +232,6 @@ a {
     height: 100%;
     object-fit: cover; 
 }
-
-
 
 .semua-kos .semua-kos-desc {
     position: relative;
@@ -265,12 +260,6 @@ a {
     margin-right: 75px; 
 }
 
-/* .main-kos-populer .detail-main-kos .rating .rating-star,
-.semua-kos .semua-kos-desc .rating-star, .ulasan .semua-kos-bintang .rating-star {
-    fill: var(--primary);
-    color: var(--primary);
-} */
-
 .rating-star{
     fill: var(--primary);
     color: var(--primary);
@@ -294,18 +283,18 @@ a {
     font-weight: 700;
 }
 
-
-.main-kos-populer .detail-main-kos .price-discon p, .semua-kos .semua-kos-harga .price-discon p{
+.price-discon p{
     color: #DA3438;
 }
 
-.main-kos-populer .detail-main-kos .price-discon span, .semua-kos .semua-kos-harga .price-discon span, .detail-kos .price-discon span{
+.price-discon span{
     color: #858585;
     text-decoration: line-through;
 }
 
-.main-kos-populer .detail-main-kos .price span, .semua-kos .semua-kos-harga .price span, .detail-kos .price span{
+.price span{
     font-weight: 700;
+
 }
 
 
@@ -395,6 +384,10 @@ a {
     width: 850px;
 }
 
+.detail-kos-konten .heading h1, .detail-kos-konten h5, .detail-kos-konten h4, .detail-kos-konten .judul{
+    font-weight: 700;
+}
+
 
 .detail-kos-konten .fasilitas-kamar .list-1,.detail-kos-konten .fasilitas-umum .list-1{
     margin-right: 300px;
@@ -421,12 +414,12 @@ a {
     margin-right: 40px;
 }
 
-
 .detail-kos-konten .review .user .rating{
-   border: 1px solid #858585;
-   width: 80px;
+   border: 1px solid #b0a8a8;
+   border-radius: 5%;
+   width: 70px;
    background-color: #fff;
-   padding: 4px;
+   padding: 3px;
 }
 
 .detail-kos-konten .review .laporkan{
