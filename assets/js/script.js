@@ -10,24 +10,20 @@ var swiper = new Swiper(".mySwiperPopuler", {
 
 });
 
-document.getElementById("lihatSemuaKos").addEventListener("click", function() {
-    window.location.href = "sebelum-login/lihat_semua.html";
-});
-
 
 document.getElementById("lihatSemuaKos").addEventListener("click", function() {
     window.location.href = "sebelum-login/lihat_semua.html";
 });
 
-// Fungsi yang akan dijalankan ketika tombol "Masuk" ditekan
+
 document.getElementById("masukButton").addEventListener('click', function() {
-    window.location.href = "masuk-login/login.html"; // Gantilah URL_TUJUAN dengan URL yang Anda inginkan
+    window.location.href = "masuk-login/login.html";
 });
 
-// Fungsi yang akan dijalankan ketika tombol "Masuk" ditekan
-document.getElementById("favorit").addEventListener('click', function() {
-    window.location.href = "favorit/favorit.html"; // Gantilah URL_TUJUAN dengan URL yang Anda inginkan
-});
+
+// document.getElementById("favorit").addEventListener('click', function() {
+//     window.location.href = "favorit/favorit.html";
+// });
 
 
 // AOS

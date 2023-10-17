@@ -46,14 +46,14 @@
   <!-- navbar start -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand ms-3 fs-3" href="../index.html"> <img src="../assets/img/logo.png" class="img-logo" alt="logo-web">
+      <a class="navbar-brand ms-3 fs-3" href="../sesudah-login/index.html"> <img src="../assets/img/logo.png" class="img-logo" alt="logo-web">
         kostantine</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item">
             <a id="chat-toggle" class="nav-link me-2" href="#"> <i data-feather="file-text"></i></a>
           </li>
@@ -61,7 +61,15 @@
             <a class="nav-link me-3" href="#"> <i data-feather="heart"></i></a>
           </li>
           <li class="nav-item">
-            <button id="masukButton" type="button" class="btn btn-outline-primary me-3 fs-5">Masuk</button>
+            <div class="dropdown me-4">
+              <i class="bx bxs-user-circle fs-2 abu" data-bs-toggle="dropdown"
+              aria-expanded="false"></i>
+              <ul class="dropdown-menu dropdown-menu-end dd-rekomendasi">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Riwayat</a></li>
+                <li><a class="dropdown-item" href="../index.html">Keluar</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>

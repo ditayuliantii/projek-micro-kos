@@ -25,6 +25,9 @@
   <!-- My style -->
   <link rel="stylesheet" href="../assets/css/style.css">
 
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
   <!-- Feather Icons -->
   <script src="https://unpkg.com/feather-icons"></script>
 
@@ -35,22 +38,30 @@
   <!-- navbar start -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand ms-3 fs-3" href="#"> <img src="../assets/img/logo.png" class="img-logo" alt="logo-web">
+      <a class="navbar-brand ms-3 fs-3" href="index.html"> <img src="../assets/img/logo.png" class="img-logo" alt="logo-web">
         kostantine</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item">
             <a class="nav-link me-2" href="#"> <i data-feather="file-text"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-3" href=""> <i data-feather="heart"></i></a>
+            <a class="nav-link me-3" href="../favorit/favorit.html"> <i data-feather="heart"></i></a>
           </li>
           <li class="nav-item">
-            <button id="masukButton" type="button" class="btn btn-outline-primary me-3 fs-5 masukButton">Masuk</button>
+            <div class="dropdown me-4">
+              <i class="bx bxs-user-circle fs-2 abu" data-bs-toggle="dropdown"
+              aria-expanded="false"></i>
+              <ul class="dropdown-menu dropdown-menu-end dd-rekomendasi">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Riwayat</a></li>
+                <li><a class="dropdown-item" href="../index.html">Keluar</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
@@ -61,7 +72,7 @@
   <div class="container-detail-nav container-fluid py-2 ">
     <div class="row">
       <div class="col ms-4 d-flex align-items-center">
-        <a class="fs-5 me-3" href="../index.html">Home</a>
+        <a class="fs-5 me-3" href="index.html">Home</a>
         <i data-feather="chevron-right" class="right"></i>
         <p class="fs-5 ms-3 mt-3">Kost Singgahsini Krakatau Tipe A Jakarta</p>
       </div>
@@ -94,17 +105,17 @@
               Perbulan
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="">Perbulan</a></li>
-              <li><a class="dropdown-item" href="">Pertahun</a></li>
+              <li><a class="dropdown-item" href="detail-kos-2.html">Perbulan</a></li>
+              <li><a class="dropdown-item" href="#">Pertahun</a></li>
             </ul>
           </div>
         </div>
         <div class="tanya d-flex align-items-center justify-content-center py-3 mt-5">
           <i data-feather="file-text"></i>
-          <a href="../masuk-login/login.html">Tanya Pemilik</a>
+          <a href="">Tanya Pemilik</a>
         </div>
         <div class="ajukan d-flex justify-content-center py-3 mt-3">
-          <a href="../masuk-login/login.html">Ajukan Sewa</a>
+          <a href="">Ajukan Sewa</a>
         </div>
 
       </div>
@@ -588,11 +599,7 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
   <script src="../assets/js/script.js"></script>
-  <script>
-    document.getElementById("masukButton").addEventListener('click', function () {
-      window.location.href = "../masuk-login/login.html";
-    });
-  </script>
+
 
 
   <!-- Feather Icons -->

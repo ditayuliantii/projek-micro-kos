@@ -5,12 +5,30 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  /* min-height: 5000px; */
+  min-height: 5000px;
 }
 
 a {
     text-decoration: none;
 }
+
+.black{
+    color: #000;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.abu{
+    color: #949494;
+}
+
+.maroon{
+    color: #BE4C35;
+}
+
+
 
 /* navbar */
 .navbar {
@@ -36,15 +54,17 @@ a {
     color: var(--primary);
 }
 
-.navbar-nav .btn-outline-primary {
+.navbar-nav .btn-outline-primary, .pengajuan-kos-konten-2 .pembayaran .btn-outline-primary  {
     color: var(--primary);
     border-color: var(--primary);
 }
   
-.navbar-nav .btn-outline-primary:hover {
+.navbar-nav .btn-outline-primary:hover, .pengajuan-kos-konten-2 .pembayaran .btn-outline-primary:hover {
     background-color: var(--primary);
     color: white;
 }
+
+
 
 .navbar .navbar-arrow {
     width: 60px;
@@ -76,7 +96,7 @@ a {
 
 .container-hero .content h1, .tagline .tagline-text h2, .main-kos .populer h2{
     line-height: 1;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 
@@ -121,13 +141,13 @@ a {
     margin-top: 106px;
 }
 
-.container-jakarta-desc p{
+/* .container-jakarta-desc p{
     color: #535353;
     font-weight: 400;
-}
+} */
 
 .container-jakarta-desc h1, .ulasan .semua-kos-desc h2{
-    font-weight: 700;
+    /* font-weight: 700; */
     color: #383746;
 }
 
@@ -139,6 +159,10 @@ a {
 
 .container-filter .dropdown-menu{
     width: 350px;
+}
+
+.nav-item .dropdown-menu{
+    width: 200px;
 }
 
 .container-filter .dropdown .dd-harga{
@@ -153,7 +177,7 @@ a {
     font-weight: normal;
 }
 
-.container-filter .waktu-sewa .form-check-input{
+.container-filter .waktu-sewa .form-check-input, .pengajuan-kos-konten .pembayaran .form-check-input, .modal .form-check-input{
     border-radius: 50%;
 
 }
@@ -173,10 +197,9 @@ a {
 .dropdown-item:focus,
 .dropdown-item:active {
     background-color: transparent;
-    /* color: var(--your-text-color); */
 }
 
-.container-filter .dropdown .dd-rekomendasi .dropdown-item:hover {
+.dropdown .dd-rekomendasi .dropdown-item:hover{
     font-weight: 700;
 }
 
@@ -198,12 +221,12 @@ a {
     color: #52515E;
 }
 
-.main-kos button, .semua-kos button, .detail-kos-konten button{
+.main-kos button, .semua-kos button, .detail-kos-konten button, .fixed-detail-ajukan button{
     color: #383746;
     border-color: #E8E8E8;
 }
 
-.main-kos .btn-outline-success:active, .main-kos .btn-outline-success:hover, .semua-kos .btn-outline-success:active, .semua-kos .btn-outline-success:hover, .detail-kos-konten .btn-outline-success:active, .detail-kos-konten .btn-outline-success:hover {
+.main-kos .btn-outline-success:active, .main-kos .btn-outline-success:hover, .semua-kos .btn-outline-success:active, .semua-kos .btn-outline-success:hover, .detail-kos-konten .btn-outline-success:active, .detail-kos-konten .btn-outline-success:hover, .fixed-detail-ajukan .btn-outline-success:active, .fixed-detail-ajukan .btn-outline-success:hover {
     background-color: #fff;
     color: #181515;
     border-color: #E8E8E8;
@@ -275,12 +298,12 @@ a {
 }
 
 
-.main-kos-populer .detail-main-kos .fasilitas, .semua-kos .semua-kos-desc .fasilitas{
+.main-kos-populer .detail-main-kos .fasilitas, .semua-kos .semua-kos-desc .fasilitas, .fixed-detail-ajukan .fasilitas{
     color: #A8A8A8;
 }
 
-.main-kos-populer .detail-main-kos .location, .semua-kos .semua-kos-desc .location{
-    font-weight: 700;
+.main-kos-populer .detail-main-kos .location, .semua-kos .semua-kos-desc .location, .fixed-detail-ajukan .location{
+    /* font-weight: 700; */
 }
 
 .price-discon p{
@@ -293,8 +316,7 @@ a {
 }
 
 .price span{
-    font-weight: 700;
-
+    /* font-weight: 700; */
 }
 
 
@@ -311,11 +333,255 @@ a {
     color: #000000;
 }
 
+/* detail-ajukan-sewa */
+.container-detail-ajukan {
+    margin-top: 135px;
+    margin-bottom: 30px;
+}
+
+
+
+.detail-kos-foto .fixed-detail-ajukan{
+    position: fixed;
+    right: 0;
+    margin-right: 20px;
+    width: 500px;
+    height: auto;
+    border: #c4c4c4 solid 1px;
+    border-radius: 3%;
+    padding: 20px;
+    color: #000000;
+}
+
+.detail-kos-foto .fixed-detail-ajukan .deskripsi{
+    font-size: 12px;
+    line-height: 0.2;
+}
+
+.fixed-detail-ajukan .rincian-pembayaran li span{
+    text-decoration: underline;
+}
+
+.pengajuan-kos-konten{
+    width: 1010px;
+}
+
+.pengajuan-kos-konten-2{
+   /* width: 70%; */
+}
+
+
+
+.pengajuan-kos-konten .ubah{
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.pengajuan-kos-konten .ubah span, .pengajuan-kos-konten .form-check-label a{
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+}
+
+
+.pengajuan-kos-konten h4, .pengajuan-kos-konten h3, .pengajuan-kos-konten .total-sewa .judul{
+    /* font-weight: bold; */
+}
+
+.pengajuan-kos-konten a, .container-detail-ajukan a{
+    color: #000;
+}
+
+.pengajuan-kos-konten .informasi .judul, .pengajuan-kos-konten .desk {
+    margin-bottom: 0.1rem;
+    /* font-weight: bold; */
+}
+
+.pengajuan-kos-konten .informasi .input, .pengajuan-kos-konten .biaya-sewa p span, .pengajuan-kos-konten .total-sewa p span{
+    /* color: #949494; */
+}
+
+
+
+.pengajuan-kos-konten .informasi p span{
+    font-style: italic;
+    color: red;
+}
+
+.pengajuan-kos-konten .dokumen .alert .icon {
+    color: #fff;
+    fill: #0074DB;
+}
+
+.pengajuan-kos-konten-2 .no-invoice a{
+    color: var(--primary);
+}
+
+/* .pengajuan-kos-konten .btn-primary{
+    color: var(--primary);
+}
+
+.pengajuan-kos-konten .btn-primary, .pengajuan-kos-konten .btn-primary:active{
+    border: 1px solid var(--primary);
+    background-color: #fff;
+}
+
+.pengajuan-kos-konten .btn-primary:hover{
+    background-color: var(--primary);
+    color: #fff;
+} */
+
+
+/* .pengajuan-kos-konten .jumlah-penyewa .minus-btn, .pengajuan-kos-konten .jumlah-penyewa .plus-btn {
+    background-color: #E8E8E8;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+} */
+
+.pengajuan-kos-konten .minus-btn, .pengajuan-kos-konten .plus-btn{
+    background-color: #E8E8E8;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+}
+
+
+ 
+.pengajuan-kos-konten .jumlah-penyewa input, .pengajuan-kos-konten .durasi-sewa input{
+    border: none;
+}
+
+
+
+/* coba */
+.pengajuan-kos-konten .dokumen .custom-file-upload {
+    /* display: inline-block; */
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #DADADA;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    overflow: hidden;
+}
+  
+.pengajuan-kos-konten .dokumen .input-file {
+    /* font-size: 14px; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+  
+/* .pengajuan-kos-konten .dokumen .alert, .pengajuan-kos-konten .total-sewa .alert{
+    padding: 15px;
+    border-color: #E8E8E8;
+} */
+
+.pengajuan-kos-konten .alert{
+    padding: 15px;
+    border-color: #E8E8E8;
+}
+
+.pengajuan-kos-konten .ajukan, .pengajuan-kos-konten-2 .ajukan, .container-booking .lihat-daftar{
+    padding: 20px;
+    background-color: var(--primary);
+} 
+
+.pengajuan-kos-konten .ajukan a, .pengajuan-kos-konten-2 .ajukan a, .container-booking .lihat-daftar a{
+    color: #fff;
+    font-size: 1.3rem;
+
+}
+
+
+.pengajuan-kos-konten-2 .voucher{
+    padding: 10px;
+    width: 600px;
+    margin-left: 30%;
+    margin-right: 20%;
+    border: #949494 solid 1px;
+    border-radius: 3%;
+    color: var(--primary);
+}
+
+.pengajuan-kos-konten .no-rek{
+    margin-left: 120px;
+}
+
+.custom-hr {
+    height: 1px; 
+    background-color: #d9d9d9; 
+    margin: 20px 0;
+    padding: 8px;
+}
+  
+
 .detail-kos-foto .fixed-ajukan .btn{
     border-color: #969893;
     color: #969893;
     border-radius: 5%;
 }
+
+.detail-kos-foto .fixed-ajukan .pembayaran{
+    border: 1px #969893 solid;
+}
+
+.detail-kos-foto .fixed-ajukan .pembayaran p{
+    font-style: italic;
+}
+
+.detail-kos-foto .fixed-ajukan .pembayaran .list-2, .modal h4, .fixed-detail-ajukan .rincian-pembayaran .list-2, .fixed-detail-ajukan .rincian-pembayaran .list-1 ,.fixed-detail-ajukan .rincian-pembayaran h5{
+    /* font-weight: 700; */
+}
+
+/* modal pop up ajukan sewa */
+.modal .modal-content{
+    width: 600px;
+}
+
+.modal-2 .modal-content{
+    width: 700px;
+}
+
+.modal .modal-content .desk{
+    background-color: #F9DFD0;
+    color: #B98264;
+    font-size: 14px;
+}
+
+.modal-footer .profile{
+    width: 250px;
+    border: 1px solid #969893;
+    border-radius: 3%;
+}
+
+.modal-footer .profile a{
+    color: #000;
+}
+
+.modal-footer .next{
+    width: 250px;
+    background-color: var(--primary);
+    border-radius: 3%;
+}
+
+.modal-2 .modal-footer .next{
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 3%;
+}
+
+.modal-footer .next a{
+    color: #fff;
+}
+
+
 
 .detail-kos-foto .kolom-1{
     background: url('../img/kos-utama-1.png') no-repeat center center;
@@ -380,11 +646,12 @@ a {
 
 /* detail kos content */
 .detail-kos-konten{
+    /* width: 100%; */
     width: 850px;
 }
 
 .detail-kos-konten .heading h1, .detail-kos-konten h5, .detail-kos-konten h4, .detail-kos-konten .judul{
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 

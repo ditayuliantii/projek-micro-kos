@@ -21,6 +21,9 @@
   <!-- My style -->
   <link rel="stylesheet" href="../assets/css/style.css">
 
+   <!-- Box Icons -->
+   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
   <!-- Feather Icons -->
   <script src="https://unpkg.com/feather-icons"></script>
 </head>
@@ -30,13 +33,14 @@
   <nav class="navbar navbar-expand-lg navbar-2 bg-body-tertiary fixed-top py-4">
     <div class="container-fluid">
       <div class="container-fluid d-flex align-items-center">
-        <a href="../index.html"><i data-feather="arrow-left" class="navbar-arrow"></i></a>
+        <a href="index.html"><i data-feather="arrow-left" class="navbar-arrow"></i></a>
         <form class="d-flex container-fluid" role="search">
           <div class="input-group input-group-lg shadow-sm">
             <span class="input-group-text">
               <i data-feather="search"></i>
             </span>
-            <input class="form-control py-3 fs-6" type="search" placeholder="Cari di kostantine" aria-label="Search">
+            <input class="form-control py-3 fs-6" type="search" placeholder="Cari di kostantine"
+              aria-label="Search">
           </div>
         </form>
       </div>
@@ -45,15 +49,24 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item">
             <a class="nav-link me-3 ms-4" href="#"> <i data-feather="file-text"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-3" href=""> <i data-feather="heart"></i></a>
+            <a class="nav-link me-3" href="../favorit/favorit.html"> <i data-feather="heart"></i></a>
           </li>
           <li class="nav-item">
-            <button id="masukButton" type="button" class="btn btn-outline-primary me-3 fs-5 masukButton" >Masuk</button>
+            <div class="dropdown me-4">
+              <i class="bx bxs-user-circle fs-2 abu" data-bs-toggle="dropdown"
+              aria-expanded="false"></i>
+              <ul class="dropdown-menu dropdown-menu-end dd-rekomendasi">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Riwayat</a></li>
+                <li><a class="dropdown-item" href="../index.html">Keluar</a></li>
+              </ul>
+            </div>
+            
           </li>
         </ul>
       </div>
@@ -243,18 +256,17 @@
   <div class="container-jakarta-desc container-fluid py-2 ">
     <div class="row">
       <div class="col ms-4 mt-2">
-        <p class="fs-5">7 - 12 kost dari 30 kos-kosan di sekitar Kost Jakarta</p>
+        <p class="fs-5">1 - 6 kost dari 30 kos-kosan di sekitar Kost Jakarta</p>
       </div>
     </div>
   </div>
-
   <section class="semua-kos" id="semua-kos">
     <div class="container-fluid">
       <!-- row 1 -->
       <div class="row">
         <div class="col-4 semua-kos-img ms-4">
           <div class="card-semua-kos">
-            <img src="../assets/img/semua-kos/7.png" alt="kos-1" class="img-fluid">
+            <img src="../assets/img/semua-kos/1.png" alt="kos-1" class="img-fluid">
           </div>
         </div>
         <div class="col-5 semua-kos-desc ms-2">
@@ -280,7 +292,7 @@
       <div class="row">
         <div class="col-4 semua-kos-img ms-4">
           <div class="card-semua-kos">
-            <img src="../assets/img/semua-kos/8.png" alt="kos-1" class="img-fluid">
+            <img src="../assets/img/semua-kos/2.png" alt="kos-1" class="img-fluid">
           </div>
         </div>
         <div class="col-5 semua-kos-desc ms-2">
@@ -306,7 +318,7 @@
       <div class="row">
         <div class="col-4 semua-kos-img ms-4">
           <div class="card-semua-kos">
-            <img src="../assets/img/semua-kos/9.png" alt="kos-1" class="img-fluid">
+            <img src="../assets/img/semua-kos/3.png" alt="kos-1" class="img-fluid">
           </div>
         </div>
         <div class="col-5 semua-kos-desc ms-2">
@@ -332,7 +344,7 @@
       <div class="row">
         <div class="col-4 semua-kos-img ms-4">
           <div class="card-semua-kos">
-            <img src="../assets/img/semua-kos/10.png" alt="kos-1" class="img-fluid">
+            <img src="../assets/img/semua-kos/4.png" alt="kos-1" class="img-fluid">
           </div>
         </div>
         <div class="col-5 semua-kos-desc ms-2">
@@ -358,7 +370,7 @@
       <div class="row">
         <div class="col-4 semua-kos-img ms-4">
           <div class="card-semua-kos">
-            <img src="../assets/img/semua-kos/11.png" alt="kos-1" class="img-fluid">
+            <img src="../assets/img/semua-kos/5.png" alt="kos-1" class="img-fluid">
           </div>
         </div>
         <div class="col-5 semua-kos-desc ms-2">
@@ -384,7 +396,7 @@
       <div class="row">
         <div class="col-4 semua-kos-img ms-4">
           <div class="card-semua-kos">
-            <img src="../assets/img/semua-kos/12.png" alt="kos-1" class="img-fluid">
+            <img src="../assets/img/semua-kos/6.png" alt="kos-1" class="img-fluid">
           </div>
         </div>
         <div class="col-5 semua-kos-desc ms-2">
@@ -411,15 +423,15 @@
         <nav aria-label="Page navigation example">
           <ul class="pagination justify-content-center">
             <li class="page-item">
-              <a class="page-link" href="lihat_semua.html" aria-label="Previous">
+              <a class="page-link" href="#" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
               </a>
             </li>
-            <li class="page-item"><a class="page-link" href="lihat_semua.html">1</a></li>
-            <li class="page-item"><a class="page-link active" href="#">2</a></li>
+            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="lihat_semua_2.html">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
+              <a class="page-link" href="lihat_semua_2.html" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
               </a>
             </li>
@@ -435,7 +447,7 @@
   <div class="container-jakarta container-fluid py-2 ">
     <div class="row">
       <div class="col ms-4 d-flex align-items-center">
-        <a class="fs-5 me-3" href="../index.html">Home</a>
+        <a class="fs-5 me-3" href="index.html">Home</a>
         <i data-feather="chevron-right" class="right"></i>
         <p class="fs-5 ms-3 mt-3">Kost Jakarta</p>
       </div>
@@ -551,8 +563,8 @@
           </div>
         </div>
       </div>
-
     </div>
+
   </section>
   <!-- ulasan end -->
 
@@ -571,12 +583,12 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
+  <!-- JQUERY -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
   <script src="../assets/js/script.js"></script>
-  <script>
-    document.getElementById("masukButton").addEventListener('click', function () {
-      window.location.href = "../masuk-login/login.html";
-    });
-  </script>
 
   <!-- Feather Icons -->
   <script>
