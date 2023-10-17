@@ -47,13 +47,13 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link me-3 ms-4" href="#"> <i data-feather="file-text"></i></a>
+            <a id="chat-toggle" class="nav-link me-2" href="#"> <i data-feather="file-text"></i></a>
           </li>
           <li class="nav-item">
             <a class="nav-link me-3" href=""> <i data-feather="heart"></i></a>
           </li>
           <li class="nav-item">
-            <button id="masukButton" type="button" class="btn btn-outline-primary me-3 fs-5 masukButton" >Masuk</button>
+            <button id="masukButton" type="button" class="btn btn-outline-primary me-3 fs-5 masukButton">Masuk</button>
           </li>
         </ul>
       </div>
@@ -571,10 +571,59 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
-  <script src="../assets/js/script.js"></script>
+  <!-- <script src="../assets/js/script.js"></script> -->
+
   <script>
     document.getElementById("masukButton").addEventListener('click', function () {
       window.location.href = "../masuk-login/login.html";
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const chatOverlay = document.getElementById('chat-overlay');
+      const chatToggle = document.getElementById('chat-toggle');
+      const messageInput = document.getElementById('message-input');
+      const sendButton = document.getElementById('send-button');
+      const chatIcon = document.getElementById("chat-icon");
+      const closeChatButton = document.getElementById("close-chat-overlay");
+      const chatMessages = document.getElementById("chat-messages");
+
+      // Event handler untuk menampilkan atau menyembunyikan chat overlay
+      chatToggle.addEventListener('click', function () {
+        if (chatOverlay.style.right === '0px' || chatOverlay.style.right === '') {
+          chatOverlay.style.right = '-400px'; // Menyembunyikan chat
+        } else {
+          chatOverlay.style.right = '0px'; // Menampilkan chat
+        }
+      });
+
+      sendButton.addEventListener('click', function () {
+        const message = messageInput.value.trim();
+
+        if (message !== '') {
+          appendMessage('you', message);
+          // Kirim pesan ke backend atau pemilik kos di sini
+          messageInput.value = '';
+        }
+      });
+
+      function appendMessage(sender, text) {
+        const messageElement = document.createElement('div');
+        messageElement.innerHTML = `<strong>${sender}:</strong> ${text}`;
+        chatMessages.appendChild(messageElement);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+
+      // JavaScript untuk menutup chat overlay saat tombol "X" diklik
+      closeChatButton.addEventListener("click", function () {
+        chatOverlay.style.right = '-400px';
+      });
+
+      // Saat tombol ikon chat diklik, tampilkan chat overlay
+      chatIcon.addEventListener("click", function () {
+        chatOverlay.style.right = '0px';
+      });
     });
   </script>
 
