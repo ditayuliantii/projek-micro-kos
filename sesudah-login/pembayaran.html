@@ -47,7 +47,8 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item">
-            <a class="nav-link me-2" href="#"> <i data-feather="file-text"></i></a>
+            <a id="chat-toggle" class="nav-link me-2" href="#"> <i data-feather="file-text"
+                onclick="initChat()"></i></a>
           </li>
           <li class="nav-item">
             <a class="nav-link me-3" href="../favorit/favorit.html"> <i data-feather="heart"></i></a>
@@ -142,6 +143,22 @@
 
     </div>
     <!-- detail kos content end-->
+  </div>
+  
+  <!-- chat overlay -->
+  <div id="chat-overlay">
+    <button id="close-chat-overlay" class="close-button">X</button>
+    <div class="chat-container">
+      <div class="chat-header">
+        <h2>Chat</h2>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+      </div>
+      <div class="chat-input">
+        <input type="text" id="message-input" placeholder="Ketik pesan...">
+        <button id="send-button">Kirim</button>
+      </div>
+    </div>
   </div>
 
 

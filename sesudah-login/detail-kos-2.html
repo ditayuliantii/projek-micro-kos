@@ -38,7 +38,8 @@
   <!-- navbar start -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand ms-3 fs-3" href="index.html"> <img src="../assets/img/logo.png" class="img-logo" alt="logo-web">
+      <a class="navbar-brand ms-3 fs-3" href="index.html"> <img src="../assets/img/logo.png" class="img-logo"
+          alt="logo-web">
         kostantine</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +48,8 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item">
-            <a class="nav-link me-2" href="#"> <i data-feather="file-text"></i></a>
+            <a id="chat-toggle" class="nav-link me-2" href="#"> <i data-feather="file-text"
+                onclick="initChat()"></i></a>
           </li>
           <li class="nav-item">
             <a class="nav-link me-3" href="../favorit/favorit.html"> <i data-feather="heart"></i></a>
@@ -136,7 +138,7 @@
         </div>
 
         <div class="tanya d-flex align-items-center justify-content-center py-3 mt-3">
-          <i data-feather="file-text"></i>         
+          <i data-feather="file-text"></i>
           <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal-2">Tanya Pemilik</a>
         </div>
         <div class="ajukan d-flex justify-content-center py-3 mt-3">
@@ -630,7 +632,8 @@
   </div>
 
   <!-- Modal tanya pemilik -->
-  <div class="modal fade modal-2" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel-2" aria-hidden="true">
+  <div class="modal fade modal-2" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel-2"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -640,9 +643,10 @@
           <div>
             <h3 class="mt-4 bold">Hubungi Kos</h3>
             <div class="desk mb-4">
-              <p class="py-2 px-2">Anda akan berinteraksi secara langsung dengan pemilik melalui kostantine chatroom.</p>
+              <p class="py-2 px-2">Anda akan berinteraksi secara langsung dengan pemilik melalui kostantine chatroom.
+              </p>
             </div>
-          
+
             <p class="fs-5 bold">Pilih Pertanyaan</p>
             <ul class="container-fluid list-unstyled">
               <li class="mb-2">
@@ -675,21 +679,33 @@
                   <span class="ms-2 fs-5">Bolehkah saya bertanya terlebih dahulu?</span>
                 </label>
               </li>
-            </ul>    
-            <p class="abu fs-6 mt-4">Dengan mengirimkan pesan, anda memberikan persetujuan untuk melakukan percakapan dengan
-              pemilik hanya melalui kostantine chatroom sebagai langkah perlindungan pengguna kami.</p>       
-
-
-
-
-
+            </ul>
+            <p class="abu fs-6 mt-4">Dengan mengirimkan pesan, anda memberikan persetujuan untuk melakukan percakapan
+              dengan
+              pemilik hanya melalui kostantine chatroom sebagai langkah perlindungan pengguna kami.</p>
           </div>
         </div>
-        <div class="modal-footer px-4 fs-5">         
+        <div class="modal-footer px-4 fs-5">
           <div class="next text-center px-2 py-2 ">
             <a href="">Kirim</a>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- chat overlay -->
+  <div id="chat-overlay">
+    <button id="close-chat-overlay" class="close-button">X</button>
+    <div class="chat-container">
+      <div class="chat-header">
+        <h2>Chat</h2>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+      </div>
+      <div class="chat-input">
+        <input type="text" id="message-input" placeholder="Ketik pesan...">
+        <button id="send-button">Kirim</button>
       </div>
     </div>
   </div>

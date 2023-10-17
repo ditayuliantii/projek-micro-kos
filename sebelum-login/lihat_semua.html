@@ -31,6 +31,7 @@
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
   </head>
 
   <body>
@@ -76,12 +77,10 @@
           id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <!-- <a class="nav-link me-3 ms-4" href="#"> <i data-feather="file-text"></i></a> -->
-
               <a
                 id="chat-toggle"
                 class="nav-link me-2"
-                href="#">
+                href="#" onclick="initChat()">
                 <i data-feather="file-text"></i
               ></a>
             </li>
@@ -94,7 +93,7 @@
               <button
                 id="masukButton"
                 type="button"
-                class="btn btn-outline-primary me-3 fs-5">
+                class="btn btn-outline-primary me-3 fs-5" onclick="login2()">
                 Masuk
               </button>
             </li>
@@ -980,18 +979,18 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
 
-    <!-- <script src="../assets/js/script.js"></script> -->
+    <script src="../assets/js/script.js"></script>
 
-    <script>
+    <!-- <script>
       document
         .getElementById("masukButton")
         .addEventListener("click", function () {
           window.location.href =
             "../masuk-login/login.html";
         });
-    </script>
+    </script> -->
 
-    <script>
+    <!-- <script>
       document.addEventListener(
         "DOMContentLoaded",
         function () {
@@ -1056,7 +1055,7 @@
           });
         }
       );
-    </script>
+    </script> -->
 
     <!-- Feather Icons -->
     <script>

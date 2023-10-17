@@ -38,7 +38,8 @@
   <!-- navbar start -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand ms-3 fs-3" href="index.html"> <img src="../assets/img/logo.png" class="img-logo" alt="logo-web">
+      <a class="navbar-brand ms-3 fs-3" href="index.html"> <img src="../assets/img/logo.png" class="img-logo"
+          alt="logo-web">
         kostantine</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,15 +48,15 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item">
-            <a class="nav-link me-2" href="#"> <i data-feather="file-text"></i></a>
+            <a id="chat-toggle" class="nav-link me-2" href="#"> <i data-feather="file-text"
+                onclick="initChat()"></i></a>
           </li>
           <li class="nav-item">
             <a class="nav-link me-3" href="../favorit/favorit.html"> <i data-feather="heart"></i></a>
           </li>
           <li class="nav-item">
             <div class="dropdown me-4">
-              <i class="bx bxs-user-circle fs-2 abu" data-bs-toggle="dropdown"
-              aria-expanded="false"></i>
+              <i class="bx bxs-user-circle fs-2 abu" data-bs-toggle="dropdown" aria-expanded="false"></i>
               <ul class="dropdown-menu dropdown-menu-end dd-rekomendasi">
                 <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><a class="dropdown-item" href="#">Riwayat</a></li>
@@ -575,6 +576,22 @@
     </div>
   </section>
   <!-- rekomendasi end-->
+
+  <!-- chat overlay -->
+  <div id="chat-overlay">
+    <button id="close-chat-overlay" class="close-button">X</button>
+    <div class="chat-container">
+      <div class="chat-header">
+        <h2>Chat</h2>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+      </div>
+      <div class="chat-input">
+        <input type="text" id="message-input" placeholder="Ketik pesan...">
+        <button id="send-button">Kirim</button>
+      </div>
+    </div>
+  </div>
 
 
 
